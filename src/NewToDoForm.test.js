@@ -8,3 +8,9 @@ it('renders without crashing', () => {
   render(<NewToDoForm addToDo={mockAddToDo} />);
   expect(screen.getByLabelText('New Task?')).toBeInTheDocument();
 });
+
+// Snapshot test
+it('matches snapshot', () => {
+  const { asFragment } = render(<NewToDoForm />);
+  expect(asFragment()).toMatchSnapshot();
+});

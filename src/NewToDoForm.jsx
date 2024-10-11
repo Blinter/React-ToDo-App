@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { useFormik } from 'formik';
 
-function NewTodoForm({ addToDo }) { // fixed parameter destructuring
+function NewTodoForm({ addToDo }) {
   const formik = useFormik({
     initialValues: {
       task: '',

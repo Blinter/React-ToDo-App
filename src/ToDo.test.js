@@ -14,6 +14,19 @@ it('renders without crashing', () => {
   );
 });
 
+// Snapshot test
+it('matches snapshot', () => {
+  const { asFragment } = render(
+    <ToDo
+      id="test-id"
+      name="Test Task"
+      status="Not Completed"
+      removal={() => {}}
+      statusChange={() => {}}
+    />);
+  expect(asFragment()).toMatchSnapshot();
+});
+
 it('displays the task name', () => {
   render(
     <ToDo
