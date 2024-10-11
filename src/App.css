@@ -1,0 +1,33 @@
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper {
+    position: absolute;
+    top: 10%;
+}
+
+body {
+    background-color: Black;
+    color: lightyellow;
+    font-size: x-large;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
